@@ -1,6 +1,6 @@
 "use client"
 
-import { Building2, Landmark, Heart, Leaf, Coins, Users } from "lucide-react"
+import { Building2, Landmark, Heart, Leaf, Coins, Users, Sparkles } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -58,6 +58,16 @@ const allies = [
     investment: "Presupuesto comunidades",
     description: "Programas para comunidades vecinas a operaciones en la cordillera. Foco en educación y movilidad social.",
     color: "bg-slate-500/10 text-slate-600",
+  },
+  {
+    name: "Fundació SURT",
+    program: "Empoderamiento de Mujeres",
+    type: "Fundación Internacional",
+    icon: Sparkles,
+    investment: "5.135+ personas atendidas",
+    description: "Fundación de Dones (Barcelona) especializada en empoderamiento personal, económico y comunitario de mujeres. Lidera proyectos de investigación social e innovación metodológica con perspectiva de género.",
+    color: "bg-purple-500/10 text-purple-600",
+    link: "https://surt.org/es/",
   },
 ]
 
@@ -148,7 +158,7 @@ export function Allies() {
             Trabajamos con instituciones comprometidas con el impacto social real
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {["CORFO", "ScotiaINSPIRA", "Colunga", "Alquimia", "Avina", "Anglo American"].map((name) => (
+            {["CORFO", "ScotiaINSPIRA", "Colunga", "Alquimia", "Avina", "Anglo American", "SURT"].map((name) => (
               <span key={name} className="text-lg font-semibold text-foreground/50">
                 {name}
               </span>
